@@ -1,5 +1,8 @@
 @media screen and (max-width: 990px) {
 
+	// --------------------------------------------------
+	// Header Styles
+	// --------------------------------------------------
 	header {
 
 		nav {
@@ -37,4 +40,44 @@
 			}
 		}
 	}
+
+
+
+	// --------------------------------------------------
+	// Boat Listing Styles
+	// --------------------------------------------------
+	.boat {
+		padding: 10px;
+
+		.boat-image {
+			width: 50%;
+			padding-right: 10px;
+		}
+
+		.boat-details {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	// --------------------------------------------------
+	// Boat Listing Styles
+	// --------------------------------------------------
+	.boat {
+		padding: 20px;
+
+		.boat-image {
+			width: 100%;
+			padding: 0 0 20px;
+			float: none;
+		}
+
+		.boat-details {
+			width: 100%;
+			float: none;
+		}
+	}
+
 }

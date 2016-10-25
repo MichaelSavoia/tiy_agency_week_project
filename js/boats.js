@@ -48,7 +48,7 @@ $(document).ready(function()
 				let price = accounting.formatMoney(boat.price);
 
 				boatElement +=
-					`<div class="col-md-12">
+					`<div class="col-xs-12">
 						<div class="boat">
 							<img class="img-responsive boat-image" src="${boat.picture}" alt="${boat.name}">
 							<div class="boat-details">
