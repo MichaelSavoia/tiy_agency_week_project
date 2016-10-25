@@ -1,3 +1,5 @@
+@import 'main';
+
 .carousel{
 	img{
 		width: 100%;
@@ -13,8 +15,19 @@
 			margin-bottom: 100px;
 			height: 200px;
 			width: 200px;
-			background-color: black;
 			border-radius: 50%;
+		}
+
+		.callToAction1{
+			background-color: $color-purple;
+		}
+
+		.callToAction2{
+			background-color: $color-link;
+		}
+
+		.callToAction3{
+			background-color: $color-bluegray;
 		}
 	}
 
@@ -37,7 +50,7 @@
 
 		.twitterHere{
 			height: 700px;
-			background-color: lightblue;
+			background-color: #0084b4;
 		}
 	}
 }

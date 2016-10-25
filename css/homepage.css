@@ -1,3 +1,94 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  color: #333; }
+
+a {
+  color: #B44031; }
+  a:hover {
+    color: #B44031; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.6em; }
+
+img {
+  max-width: 100%; }
+
+header {
+  width: 100%;
+  padding: 10px 0; }
+  header .logo {
+    width: 60px;
+    height: 60px;
+    display: inline-block; }
+  header .logo-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding: 15px 0 0 10px;
+    margin: 0; }
+  header .logo-link {
+    text-decoration: none; }
+    header .logo-link:hover {
+      text-decoration: none; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav #menuIcon {
+      display: none;
+      font-size: 1.4em;
+      padding: 19px; }
+    header nav ul {
+      list-style: none;
+      margin: 0; }
+      header nav ul li {
+        padding: 20px;
+        display: inline-block; }
+        header nav ul li a {
+          text-decoration: none; }
+          header nav ul li a:hover, header nav ul li a:active {
+            text-decoration: none; }
+
+footer {
+  margin-top: 0px;
+  text-align: center; }
+  footer .socialIcons {
+    font-size: 2em; }
+    footer .socialIcons .fa {
+      padding: 0 5px 0 5px; }
+
+@media screen and (max-width: 990px) {
+  header nav {
+    position: relative;
+    z-index: 100; }
+    header nav #menuIcon {
+      display: inline-block; }
+    header nav #menuContent {
+      display: none;
+      padding: 0;
+      position: absolute;
+      top: 65px;
+      right: 0; }
+    header nav ul li {
+      min-width: 180px;
+      padding: 20px; }
+    header nav:hover #menuContent {
+      display: block; } }
+
 .carousel img {
   width: 100%; }
 
@@ -8,8 +99,16 @@
   margin-bottom: 100px;
   height: 200px;
   width: 200px;
-  background-color: black;
   border-radius: 50%; }
+
+.container .row .callToAction1 {
+  background-color: #2e2a43; }
+
+.container .row .callToAction2 {
+  background-color: #B44031; }
+
+.container .row .callToAction3 {
+  background-color: #687c83; }
 
 .container .social .socialIcons {
   margin-bottom: 10px; }
@@ -25,4 +124,4 @@
 
 .container .social .twitterHere {
   height: 700px;
-  background-color: lightblue; }
+  background-color: #0084b4; }
