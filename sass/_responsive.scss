@@ -1,0 +1,42 @@
+@media screen and (max-width: 990px) {
+
+	header {
+
+		nav {
+			position: relative;
+			z-index: 100;
+
+			#menuIcon {
+				display: inline-block;
+			}
+
+			#menuContent {
+				display: none;
+				background-color: $color-black-dark;
+				padding: 0;
+				position: absolute;
+				top: 65px;
+				right: 0;
+			}
+
+			ul {
+
+				li {
+					min-width: 180px;
+					padding: 20px;
+				}
+			}
+
+			&:hover {
+
+				#menuIcon {
+					background-color: $color-mint-light;
+				}
+
+				#menuContent {
+					display:block;
+				}
+			}
+		}
+	}
+}

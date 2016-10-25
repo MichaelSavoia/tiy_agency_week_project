@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #333; }
+
+a {
+  color: #4078C0; }
+  a:hover {
+    color: #4078C0; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.6em; }
+
+img {
+  max-width: 100%; }
+
+.content-section {
+  padding: 40px 0; }
+
+.hide-element {
+  display: none; }
+
+.add-margin-bottom {
+  margin-bottom: 60px; }
+
+header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff; }
+  header .logo {
+    width: 60px;
+    height: 60px;
+    display: inline-block; }
+  header .logo-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding: 15px 0 0 10px;
+    margin: 0; }
+  header .logo-link {
+    color: #4078C0;
+    text-decoration: none; }
+    header .logo-link:hover {
+      color: #4078C0;
+      text-decoration: none; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav #menuIcon {
+      display: none;
+      font-size: 1.4em;
+      padding: 19px; }
+    header nav ul {
+      list-style: none;
+      margin: 0; }
+      header nav ul li {
+        padding: 20px;
+        display: inline-block; }
+        header nav ul li a {
+          color: #4078C0;
+          text-decoration: none; }
+          header nav ul li a:hover, header nav ul li a:active {
+            color: #4078C0;
+            text-decoration: none; }
+        header nav ul li:hover {
+          background-color: #333; }
+
+@media screen and (max-width: 990px) {
+  header nav {
+    position: relative;
+    z-index: 100; }
+    header nav #menuIcon {
+      display: inline-block; }
+    header nav #menuContent {
+      display: none;
+      background-color: #fff;
+      padding: 0;
+      position: absolute;
+      top: 65px;
+      right: 0; }
+    header nav ul li {
+      min-width: 180px;
+      padding: 20px; }
+    header nav:hover #menuIcon {
+      background-color: #F5F5F5; }
+    header nav:hover #menuContent {
+      display: block; } }
+
+/*# sourceMappingURL=main.css.map */
