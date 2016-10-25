@@ -8,13 +8,13 @@ html, body {
 body {
   font-size: 14px;
   font-family: 'Lato', sans-serif;
-  background-color: #fff;
+  background-color: #f4f4f4;
   color: #333; }
 
 a {
-  color: #4078C0; }
+  color: #B44031; }
   a:hover {
-    color: #4078C0; }
+    color: #B44031; }
 
 p,
 h1,
