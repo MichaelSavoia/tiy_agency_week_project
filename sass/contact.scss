@@ -56,36 +56,17 @@ $border-radius-large: 6px;
 .contact {
 	margin-bottom: 40px;
 
-	form {
-		width: 100%;
+	.contact-title {
+		margin-bottom: -40px;
+	}
 
-		.text-label,
-		.message-label {
-			color: $color-text-light;
-			padding: 20px 0 5px;
-		}
+	.form-all {
+		width: 100% !important;
+	}
 
-		.text-input,
-		.message-input {
-			width: 100%;
-			padding: 10px;
-			background-color: darken($color-background, 20);
-			border: none;
-		}
-
-		button {
-			background-color: $color-purple;
-			color: $color-background;
-			padding: 10px 20px;
-			margin-top: 20px;
-			border-radius: 0;
-			float: right;
-
-			&:hover {
-				background-color: lighten($color-purple, 20);
-				color: $color-background;
-			}
-		}
+	.form-line {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 }
 
