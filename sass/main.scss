@@ -1,0 +1,105 @@
+@import 'bourbon/bourbon';
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+$color-background: 		#fff;
+$color-alt-background: 	#F5F5F5;
+$color-border: 			#DDD;
+$color-link: 			#4078C0;
+$color-text: 			#333;
+$color-text-light: 		#767676;
+$color-success: 		#75C759;
+
+$border-radius-small: 3px;
+$border-radius-large: 6px;
+
+
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+@mixin clearAfter() {
+	content:"";
+    display:table;
+    clear:both;
+}
+
+@mixin displayInlineBlock() {
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin boxShadow() {
+	box-shadow: 1px 1px 3px rgba($color-background, .2);
+}
+
+@mixin borderRadius($border-radius) {
+	-webkit-border-radiu: $border-radius;
+	  -moz-border-radius: $border-radius;
+		   border-radius: $border-radius;
+}
+
+
+
+// --------------------------------------------------
+// Global Styles
+// --------------------------------------------------
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+    background-color: $color-background;
+	color: $color-text;
+}
+
+a {
+	color: $color-link;
+
+	&:hover {
+		color: $color-link;
+	}
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.6em;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+// --------------------------------------------------
+// Header Styles
+// --------------------------------------------------
+@import '_header.scss';
+
+
+
+// --------------------------------------------------
+// Footer Styles
+// --------------------------------------------------
+@import '_profile.scss';
+
+
+
+// --------------------------------------------------
+// Responsive Styles
+// --------------------------------------------------
+@import '_responsive.scss';
