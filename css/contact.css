@@ -1,0 +1,27 @@
+.location {
+  margin-bottom: 40px; }
+
+.contact {
+  margin-bottom: 40px; }
+  .contact form {
+    width: 100%; }
+    .contact form .text-label,
+    .contact form .message-label {
+      color: #767676;
+      padding: 20px 0 5px; }
+    .contact form .text-input,
+    .contact form .message-input {
+      width: 100%;
+      padding: 10px;
+      background-color: #cccccc;
+      border: none; }
+    .contact form button {
+      background-color: #2e2a43;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 0;
+      float: right; }
+      .contact form button:hover {
+        background-color: #595182;
+        color: white; }

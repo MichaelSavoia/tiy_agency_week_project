@@ -1,0 +1,91 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+$color-background: 		white;
+$color-purple:			#2e2a43;
+$color-bluegray:		#687c83;
+$color-tan:				#a69c83;
+$color-tan-light:		#e7cf9f;
+$color-link: 			#B44031;
+$color-text: 			#333;
+$color-text-light: 		#767676;
+
+$border-radius-small: 3px;
+$border-radius-large: 6px;
+
+
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+@mixin clearAfter() {
+	content:"";
+    display:table;
+    clear:both;
+}
+
+@mixin displayInlineBlock() {
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin boxShadow() {
+	box-shadow: 1px 1px 3px rgba($color-background, .2);
+}
+
+@mixin borderRadius($border-radius) {
+	-webkit-border-radiu: $border-radius;
+	  -moz-border-radius: $border-radius;
+		   border-radius: $border-radius;
+}
+
+
+
+// --------------------------------------------------
+// Location Styles
+// --------------------------------------------------
+.location {
+	margin-bottom: 40px;
+}
+
+
+
+// --------------------------------------------------
+// Contact Styles
+// --------------------------------------------------
+.contact {
+	margin-bottom: 40px;
+
+	form {
+		width: 100%;
+
+		.text-label,
+		.message-label {
+			color: $color-text-light;
+			padding: 20px 0 5px;
+		}
+
+		.text-input,
+		.message-input {
+			width: 100%;
+			padding: 10px;
+			background-color: darken($color-background, 20);
+			border: none;
+		}
+
+		button {
+			background-color: $color-purple;
+			color: $color-background;
+			padding: 10px 20px;
+			margin-top: 20px;
+			border-radius: 0;
+			float: right;
+
+			&:hover {
+				background-color: lighten($color-purple, 20);
+				color: $color-background;
+			}
+		}
+	}
+}
+
