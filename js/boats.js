@@ -7,6 +7,8 @@ $(document).ready(function()
 	var Boats = (function()
 	{
 
+
+
 		// --------------------------------------------------
 		// Initialize Module
 		// --------------------------------------------------
@@ -73,7 +75,11 @@ $(document).ready(function()
 			init: init
 		}
 
+
+
 	})();
+
+
 
 	// Initialize boat listing
 	Boats.init();
