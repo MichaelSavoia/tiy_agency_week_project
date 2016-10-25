@@ -1,3 +1,10 @@
-footer {
-	
+footer  {
+    margin-top: 0px;
+    text-align:center;
+    .socialIcons {
+        font-size: 2em;
+        .fa {
+            padding: 0 5px 0 5px;
+        }
+    }
 }

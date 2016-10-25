@@ -12,7 +12,6 @@
 
 			#menuContent {
 				display: none;
-				background-color: $color-black-dark;
 				padding: 0;
 				position: absolute;
 				top: 65px;
@@ -30,7 +29,6 @@
 			&:hover {
 
 				#menuIcon {
-					background-color: $color-mint-light;
 				}
 
 				#menuContent {

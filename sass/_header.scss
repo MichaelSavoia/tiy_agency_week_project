@@ -1,8 +1,7 @@
 header {
 	width: 100%;
 	padding: 10px 0;
-	background-color: $color-mint-dark;
-	color: $color-gray-light;
+	
 
 	.logo {
 		width: 60px;
@@ -19,11 +18,9 @@ header {
 	}
 
 	.logo-link {
-		color: $color-gray-light;
 		text-decoration: none;
 
 		&:hover {
-			color: $color-gray-dark;
 			text-decoration: none;
 		}
 	}
@@ -47,18 +44,15 @@ header {
 				display: inline-block;
 
 				a {
-					color: $color-gray-light;
 					text-decoration: none;
 
 					&:hover,
 					&:active {
-						color: $color-gray-dark;
 						text-decoration: none;
 					}
 				}
 
 				&:hover {
-					background-color: $color-mint-light;
 				}
 			}
 		}
