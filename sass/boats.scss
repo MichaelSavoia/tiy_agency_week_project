@@ -1,0 +1,84 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+$color-background: 		#f4f4f4;
+$color-purple:			#2e2a43;
+$color-bluegray:		#687c83;
+$color-tan:				#a69c83;
+$color-tan-light:		#e7cf9f;
+$color-link: 			#B44031;
+$color-text: 			#333;
+$color-text-light: 		#767676;
+
+$border-radius-small: 3px;
+$border-radius-large: 6px;
+
+
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+@mixin clearAfter() {
+	content:"";
+    display:table;
+    clear:both;
+}
+
+@mixin displayInlineBlock() {
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin boxShadow() {
+	box-shadow: 1px 1px 3px rgba($color-background, .2);
+}
+
+@mixin borderRadius($border-radius) {
+	-webkit-border-radiu: $border-radius;
+	  -moz-border-radius: $border-radius;
+		   border-radius: $border-radius;
+}
+
+
+
+// --------------------------------------------------
+// Boat Listing Styles
+// --------------------------------------------------
+.boat {
+	padding: 20px;
+	background-color: darken($color-background, 2);
+	margin-bottom: 40px;
+
+	&:after {
+		@include clearAfter();
+	}
+
+	.boat-image {
+		width: 36%;
+		padding-right: 20px;
+		float: left;
+	}
+
+	.boat-details {
+		width: 64%;
+		float: left;
+
+		.title {
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0 0 -4px;
+		}
+
+		.name {
+			font-weight: bold;
+			font-size: 2em;
+			margin: 0 0 10px;
+		}
+
+		.price {
+			font-size: 1.6em;
+			font-style: italic;
+			margin: 0 0 10px;
+		}
+	}
+}
