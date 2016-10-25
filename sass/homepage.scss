@@ -20,6 +20,7 @@
 
 	.social{
 		.socialIcons{
+			margin-bottom: 10px;
 			i{
 				font-size: 3rem;
 				padding: 0 10px;
@@ -29,7 +30,14 @@
 		.blog{
 			margin: 50px 0;
 			height: 200px;
-			background-color: lightgrey;
+			&:nth-child(1){
+				margin-top: 0;
+			}
+		}
+
+		.twitterHere{
+			height: 700px;
+			background-color: lightblue;
 		}
 	}
 }
