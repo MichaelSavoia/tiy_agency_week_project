@@ -71,7 +71,8 @@ $(document).ready(function()
 		// --------------------------------------------------
 		// Make public the following:
 		// --------------------------------------------------
-		return {
+		return 
+		{
 			init: init
 		}
 

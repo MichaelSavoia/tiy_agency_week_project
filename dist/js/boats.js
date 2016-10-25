@@ -46,9 +46,10 @@ $(document).ready(function () {
 		// --------------------------------------------------
 		// Make public the following:
 		// --------------------------------------------------
-		return {
-			init: init
-		};
+		return;
+		{
+			init: init;
+		}
 	}();
 
 	// Initialize boat listing
