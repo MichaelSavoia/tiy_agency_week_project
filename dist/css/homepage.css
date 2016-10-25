@@ -1,0 +1,23 @@
+.carousel img {
+  width: 100%; }
+
+.container .row .callToAction {
+  margin-top: -100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%; }
+
+.container .social .socialIcons i {
+  font-size: 3rem;
+  padding: 0 10px; }
+
+.container .social .blog {
+  margin: 50px 0;
+  height: 200px;
+  background-color: lightgrey; }
+
+/*# sourceMappingURL=homepage.css.map */
