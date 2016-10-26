@@ -1,0 +1,14 @@
+.location {
+  margin-bottom: 40px; }
+
+.contact {
+  margin-bottom: 40px; }
+  .contact .contact-title {
+    margin-bottom: -40px; }
+  .contact .form-all {
+    width: 100% !important; }
+  .contact .form-line {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+/*# sourceMappingURL=contact.css.map */
