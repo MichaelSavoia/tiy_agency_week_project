@@ -53,7 +53,7 @@ $(document).ready(function()
 							<img class="img-responsive boat-image" src="${boat.picture}" alt="${boat.name}">
 							<div class="boat-details">
 								<h5 class="title">Name:</h5>
-								<h3 class="name">${boat.name}</h3>
+								<h2 class="name">${boat.name}</h2>
 								<h5 class="title">Price:</h5>
 								<h4 class="price">${price}</h4>
 								<h5 class="title">Description:</h5>
