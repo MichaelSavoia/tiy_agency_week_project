@@ -51,11 +51,21 @@
 			&:nth-child(1){
 				margin-top: 0;
 			}
+
+			h2{
+				color: $color-text-light;
+			}
+
+			h4{
+				color: $color-text;
+			}
 		}
 
 		.twitterHere{
-			height: 700px;
+			height: auto;
 			background-color: #0084b4;
+			padding: 6px;
+			border-radius: 10px;
 		}
 	}
 }

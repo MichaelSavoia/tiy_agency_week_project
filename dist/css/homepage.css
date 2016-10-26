@@ -144,9 +144,15 @@ footer {
   height: 200px; }
   .container .social .blog:nth-child(1) {
     margin-top: 0; }
+  .container .social .blog h2 {
+    color: #767676; }
+  .container .social .blog h4 {
+    color: #333; }
 
 .container .social .twitterHere {
-  height: 700px;
-  background-color: #0084b4; }
+  height: auto;
+  background-color: #0084b4;
+  padding: 6px;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=homepage.css.map */
