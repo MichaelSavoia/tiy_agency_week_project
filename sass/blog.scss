@@ -56,6 +56,9 @@ $border-radius-large: 6px;
 			line-height:1.6em;
 			font-size: 16px;
 		}
+		p {
+			color:$color-link;
+		}
 
 		.authorName {
 			font-weight: bold;

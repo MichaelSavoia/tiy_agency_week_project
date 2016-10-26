@@ -22,6 +22,8 @@
     .blogPost .blogContent article {
       line-height: 1.6em;
       font-size: 16px; }
+    .blogPost .blogContent p {
+      color: #B44031; }
     .blogPost .blogContent .authorName {
       font-weight: bold;
       font-size: 1.2em;
