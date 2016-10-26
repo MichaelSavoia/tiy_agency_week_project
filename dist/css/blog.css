@@ -1,4 +1,50 @@
-.blogContainer {
-  padding: 20px; }
+.blogPost {
+  padding: 20px;
+  background-color: #efefef;
+  margin-bottom: 40px; }
+  .blogPost:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .blogPost .aboutImg, .blogPost .historyImg {
+    padding-right: 20px;
+    float: left;
+    width: 34%; }
+  .blogPost .historyImg {
+    float: right; }
+  .blogPost .blogContent {
+    width: 64%;
+    float: left; }
+    .blogPost .blogContent .blogTitle {
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0 0 -4px; }
+    .blogPost .blogContent article {
+      line-height: 1.6em;
+      font-size: 16px; }
+    .blogPost .blogContent .authorName {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 0 0 10px; }
+
+@media screen and (max-width: 990px) {
+  .blogPost {
+    padding: 10px; }
+    .blogPost .aboutImg {
+      width: 50%;
+      padding-left: 10px; }
+    .blogPost .blogContent {
+      width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .blogPost {
+    padding: 20px; }
+    .blogPost .aboutImg {
+      width: 100%;
+      padding: 0 0 20px;
+      float: left; }
+    .blogPost .blogContent {
+      width: 100%;
+      float: none; } }
 
 /*# sourceMappingURL=blog.css.map */

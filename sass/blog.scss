@@ -1,4 +1,105 @@
-.blogContainer {
-    padding:20px;
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+$color-background: 		#f4f4f4;
+$color-purple:			#2e2a43;
+$color-bluegray:		#687c83;
+$color-tan:				#a69c83;
+$color-tan-light:		#e7cf9f;
+$color-link: 			#B44031;
+$color-text: 			#333;
+$color-text-light: 		#767676;
+
+$border-radius-small: 3px;
+$border-radius-large: 6px;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+@mixin clearAfter() {
+	content:"";
+    display:table;
+    clear:both;
 }
 
+// --------------------------------------------------
+// About Us Styles
+// --------------------------------------------------
+.blogPost {
+	padding: 20px;
+	background-color: darken($color-background, 2);
+	margin-bottom: 40px;
+
+	&:after {
+		@include clearAfter();
+	}
+
+	.aboutImg, .historyImg {
+		padding-right: 20px;
+		float: left;
+		width:34%;
+	}
+	.historyImg {
+		float: right;
+	}
+
+	.blogContent {
+		width: 64%;
+		float: left;
+
+		.blogTitle {
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0 0 -4px;
+		}
+		article{
+			line-height:1.6em;
+			font-size: 16px;
+		}
+
+		.authorName {
+			font-weight: bold;
+			font-size: 1.2em;
+			margin: 0 0 10px;
+		}
+	}
+}
+
+// --------------------------------------------------
+// About Us Media Queries
+// --------------------------------------------------
+
+@media screen and (max-width: 990px) {
+	.blogPost {
+		padding: 10px;
+
+		.aboutImg, {
+			width: 50%;
+			padding-left: 10px;
+		}
+
+		.blogContent {
+			width: 50%;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.blogPost {
+		padding: 20px;
+
+		.aboutImg {
+			width: 100%;
+			padding: 0 0 20px;
+			float: left;
+		}
+
+		.blogContent {
+			width: 100%;
+			float: none;
+		}
+	}
+
+}
