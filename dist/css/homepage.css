@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+  color: #333; }
+
+a {
+  color: #B44031; }
+  a:hover {
+    color: #B44031; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.6em; }
+
+img {
+  max-width: 100%; }
+
+header {
+  width: 100%;
+  background-color: #2e2a43;
+  color: #f4f4f4;
+  padding: 10px 0; }
+  header a {
+    color: #f4f4f4;
+    font-weight: bold; }
+    header a:hover {
+      color: #B44031; }
+  header .logo {
+    width: 35px;
+    display: inline-block;
+    padding-top: 10px; }
+  header .logo-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding: 12px 0 0 10px;
+    margin: 0; }
+  header .logo-link {
+    text-decoration: none; }
+    header .logo-link:hover {
+      text-decoration: none; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav #menuIcon {
+      display: none;
+      font-size: 1.4em;
+      padding: 19px; }
+    header nav ul {
+      list-style: none;
+      margin: 0; }
+      header nav ul li {
+        padding: 20px;
+        display: inline-block; }
+        header nav ul li a {
+          text-decoration: none; }
+          header nav ul li a:hover, header nav ul li a:active {
+            text-decoration: none; }
+
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+  footer .socialIcons {
+    font-size: 2em; }
+    footer .socialIcons .fa {
+      padding: 0 5px 0 5px; }
+  footer .copyright {
+    text-align: center;
+    margin: 20px auto 0; }
+    footer .copyright .copyright-text {
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px; }
+
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+  .loginmodal-container h1,
+  .loginmodal-container h3 {
+    text-align: center;
+    margin: 0; }
+  .loginmodal-container form {
+    padding-top: 20px; }
+    .loginmodal-container form input[type=submit] {
+      width: 100%;
+      display: block;
+      background-color: #2e2a43;
+      color: white;
+      text-transform: uppercase;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: none;
+      position: relative; }
+      .loginmodal-container form input[type=submit]:hover {
+        background-color: #443e62; }
+    .loginmodal-container form input[type=text],
+    .loginmodal-container form input[type=password] {
+      width: 100%;
+      padding: 10px;
+      border-radius: none;
+      margin-bottom: 10px; }
+
+@media screen and (max-width: 990px) {
+  header nav {
+    position: relative;
+    z-index: 100; }
+    header nav #menuIcon {
+      display: inline-block; }
+    header nav #menuContent {
+      background-color: #B44031;
+      display: none;
+      padding: 0;
+      position: absolute;
+      top: 65px;
+      right: 0; }
+    header nav ul li {
+      min-width: 180px; }
+      header nav ul li a {
+        padding: 20px 90px 20px 0; }
+        header nav ul li a:hover {
+          color: #f4f4f4; }
+      header nav ul li:hover {
+        background-color: #687c83; }
+    header nav:hover #menuIcon {
+      background-color: #B44031; }
+    header nav:hover #menuContent {
+      display: block; }
+  .boat {
+    padding: 10px; }
+    .boat .boat-image {
+      width: 50%;
+      padding-right: 10px; }
+    .boat .boat-details {
+      width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .boat {
+    padding: 20px; }
+    .boat .boat-image {
+      width: 100%;
+      padding: 0 0 20px;
+      float: none; }
+    .boat .boat-details {
+      width: 100%;
+      float: none; } }
+
+body {
+  background-color: #f4f4f4; }
+
+.carousel ol {
+  list-style: none; }
+
+.carousel img {
+  width: 100%; }
+
+.container .row .callToAction {
+  margin-top: -100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative; }
+  .container .row .callToAction a h2 {
+    position: absolute;
+    top: 40px;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 2.8rem; }
+
+.container .row .callToAction1 {
+  background-color: #2e2a43; }
+
+.container .row .callToAction2 {
+  background-color: #B44031; }
+
+.container .row .callToAction3 {
+  background-color: #687c83; }
+
+.container .social .socialIcons {
+  margin-bottom: 10px; }
+  .container .social .socialIcons i {
+    font-size: 3rem;
+    padding: 0 10px;
+    color: #687c83; }
+
+.container .social .blog {
+  margin: 50px 0;
+  height: auto; }
+  .container .social .blog:nth-child(1) {
+    margin-top: 0; }
+  .container .social .blog h2 {
+    color: #767676; }
+  .container .social .blog h4 {
+    color: #333; }
+
+.container .social .twitterHere {
+  height: auto;
+  background-color: #0084b4;
+  padding: 6px;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=homepage.css.map */

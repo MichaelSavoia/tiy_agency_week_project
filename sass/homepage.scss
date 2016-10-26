@@ -1,0 +1,91 @@
+@import 'main';
+
+body{
+	background-color: $color-background;
+}
+
+.carousel{
+
+	ol{
+		list-style: none;
+	}
+
+	img{
+		width: 100%;
+	}
+}
+
+.container{
+	.row{
+		.callToAction{
+			margin-top: -100px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 100px;
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			position: relative;
+
+			a{
+
+				h2{
+					position: absolute;
+					top: 40px;
+					color: white;
+					text-align: center;
+					padding: 0 10px;
+					font-weight: 700;
+					font-size: 2.8rem;
+				}
+			}
+		}
+
+		.callToAction1{
+			background-color: $color-purple;
+		}
+
+		.callToAction2{
+			background-color: $color-link;
+		}
+
+		.callToAction3{
+			background-color: $color-bluegray;
+		}
+	}
+
+	.social{
+		.socialIcons{
+			margin-bottom: 10px;
+			i{
+				font-size: 3rem;
+				padding: 0 10px;
+
+				color: $color-bluegray;
+			}
+		}
+
+		.blog{
+			margin: 50px 0;
+			height: auto;
+			&:nth-child(1){
+				margin-top: 0;
+			}
+
+			h2{
+				color: $color-text-light;
+			}
+
+			h4{
+				color: $color-text;
+			}
+		}
+
+		.twitterHere{
+			height: auto;
+			background-color: #0084b4;
+			padding: 6px;
+			border-radius: 10px;
+		}
+	}
+}
