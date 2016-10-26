@@ -1,14 +1,47 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+$color-background:      #f4f4f4;
+$color-purple:          #2e2a43;
+$color-bluegray:        #687c83;
+$color-tan:             #a69c83;
+$color-tan-light:       #e7cf9f;
+$color-link:            #B44031;
+$color-text:            #333;
+$color-text-light:      #767676;
+
+$border-radius-small: 3px;
+$border-radius-large: 6px;
+
+body > footer > div > div:nth-child(1) > div:nth-child(3) > div > a:nth-child(1) > i {
+    color:white;
+}
+ 
+
 footer  {
 	right: 0;
 	bottom: 0;
 	left:0;
     text-align:center;
+    background-color: $color-purple;
+    color: $background-color;
     .socialIcons {
         font-size: 2em;
+        color:white;
         .fa {
             padding: 0 5px 0 5px;
         }
+        a {
+        color: $color-background;
+        font-weight: bold;
+
+        &:hover {
+            color: $color-link;
+        }
     }
+
+    }
+
 
     .copyright {
         text-align: center;
