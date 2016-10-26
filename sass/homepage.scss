@@ -1,5 +1,9 @@
 @import 'main';
 
+body{
+	background-color: $color-background;
+}
+
 .carousel{
 
 	ol{
@@ -21,6 +25,20 @@
 			height: 200px;
 			width: 200px;
 			border-radius: 50%;
+			position: relative;
+
+			a{
+
+				h2{
+					position: absolute;
+					top: 40px;
+					color: white;
+					text-align: center;
+					padding: 0 10px;
+					font-weight: 700;
+					font-size: 2.8rem;
+				}
+			}
 		}
 
 		.callToAction1{
@@ -42,6 +60,8 @@
 			i{
 				font-size: 3rem;
 				padding: 0 10px;
+
+				color: $color-bluegray;
 			}
 		}
 
