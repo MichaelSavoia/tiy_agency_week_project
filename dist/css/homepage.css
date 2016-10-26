@@ -155,6 +155,13 @@ footer {
       width: 50%; } }
 
 @media screen and (max-width: 768px) {
+  header .logo {
+    width: 20px;
+    display: inline-block;
+    padding-top: 21px; }
+  header .logo-text {
+    font-size: 1em;
+    padding-top: 22px; }
   .boat {
     padding: 20px; }
     .boat .boat-image {
