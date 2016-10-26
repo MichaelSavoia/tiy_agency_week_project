@@ -64,7 +64,9 @@ header {
             text-decoration: none; }
 
 footer {
-  margin-top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   text-align: center; }
   footer .socialIcons {
     font-size: 2em; }
@@ -106,6 +108,9 @@ footer {
     .boat .boat-details {
       width: 100%;
       float: none; } }
+
+.carousel ol {
+  list-style: none; }
 
 .carousel img {
   width: 100%; }

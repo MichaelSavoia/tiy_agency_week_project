@@ -1,6 +1,11 @@
 @import 'main';
 
 .carousel{
+
+	ol{
+		list-style: none;
+	}
+
 	img{
 		width: 100%;
 	}
