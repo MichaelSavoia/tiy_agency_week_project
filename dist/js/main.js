@@ -5,7 +5,7 @@ $(document).ready(function () {
 	// --------------------------------------------------
 	// Login functionality
 	// --------------------------------------------------
-	var LoginModal = function () {
+	var Login = function () {
 
 		// --------------------------------------------------
 		// Initialize login
@@ -54,10 +54,14 @@ $(document).ready(function () {
 				method: 'POST',
 				data: { username: username, password: password },
 				success: function success(resp) {
+
+					// Did a token come back?
 					if (typeof resp.token !== 'undefined') {
+						// Yes, save token on user's localStorage & reroute user to admin page
 						localStorage.setItem('token', resp.token);
 						window.location.href = 'admin.html';
 					} else {
+						// No, user credentials were incorrect
 						alert(resp.error);
 					}
 				}
@@ -65,13 +69,51 @@ $(document).ready(function () {
 		}
 
 		// --------------------------------------------------
+		// Check whether user is logged in / out and show appropriate link
+		// --------------------------------------------------
+		function checkLoginStatus() {
+			// Login / Logout links
+			var loginStateElement = 'Admin: <a id="loginLink" href="#" data-toggle="modal" data-target="#login-modal">Login</a>';
+			var logoutStateElement = 'Admin: <a id="logoutLink" href="#">Logout</a>';
+
+			var $copyright = $('#loginStatus');
+
+			// Is there a token for the user?
+			if (localStorage.getItem('token')) {
+				// Yes, show them a logout link
+				$copyright.html(logoutStateElement);
+			} else {
+				// No, show them a login link
+				$copyright.html(loginStateElement);
+			}
+		}
+
+		// --------------------------------------------------
+		// Logout user and return to home page
+		// --------------------------------------------------
+		function logout(e) {
+			e.preventDefault();
+
+			localStorage.removeItem('token');
+			window.location.href = 'index.html';
+		}
+
+		// --------------------------------------------------
 		// Make visible the following: 
 		// --------------------------------------------------
 		return {
-			init: init
+			init: init,
+			setLoginStatus: checkLoginStatus,
+			logout: logout
 		};
 	}();
 
 	// Login form submit handler
-	$('#loginForm').on('submit', LoginModal.init);
+	$('#loginForm').on('submit', Login.init);
+
+	// Logout handler
+	$('body').on('click', '#logoutLink', Login.logout);
+
+	// Set login status
+	Login.setLoginStatus();
 });
