@@ -89,6 +89,24 @@ footer {
       min-width: 180px;
       padding: 20px; }
     header nav:hover #menuContent {
-      display: block; } }
+      display: block; }
+  .boat {
+    padding: 10px; }
+    .boat .boat-image {
+      width: 50%;
+      padding-right: 10px; }
+    .boat .boat-details {
+      width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .boat {
+    padding: 20px; }
+    .boat .boat-image {
+      width: 100%;
+      padding: 0 0 20px;
+      float: none; }
+    .boat .boat-details {
+      width: 100%;
+      float: none; } }
 
 /*# sourceMappingURL=main.css.map */
