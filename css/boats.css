@@ -1,0 +1,27 @@
+.boat {
+  padding: 20px;
+  background-color: #efefef;
+  margin-bottom: 40px; }
+  .boat:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .boat .boat-image {
+    width: 36%;
+    padding-right: 20px;
+    float: left; }
+  .boat .boat-details {
+    width: 64%;
+    float: left; }
+    .boat .boat-details .title {
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0 0 -4px; }
+    .boat .boat-details .name {
+      font-weight: bold;
+      font-size: 2em;
+      margin: 0 0 10px; }
+    .boat .boat-details .price {
+      font-size: 1.6em;
+      font-style: italic;
+      margin: 0 0 10px; }
