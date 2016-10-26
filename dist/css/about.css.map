@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"about.css","sourcesContent":[]}
+{"version":3,"sources":["about.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB,EAAE;EACtB;IACE,kBAAkB,EAAE;EACtB;IACE,iBAAiB,EAAE","file":"about.css","sourcesContent":[".main-body {\n  margin-bottom: 40px; }\n  .main-body .aboutRow {\n    padding-top: 30px; }\n  .main-body .historyContainer {\n    margin-top: 30px; }\n"]}
