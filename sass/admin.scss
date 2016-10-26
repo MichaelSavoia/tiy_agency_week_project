@@ -1,0 +1,36 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+$color-background: 		#f4f4f4;
+$color-purple:			#2e2a43;
+$color-bluegray:		#687c83;
+$color-tan:				#a69c83;
+$color-tan-light:		#e7cf9f;
+$color-link: 			#B44031;
+$color-text: 			#333;
+$color-text-light: 		#767676;
+
+$border-radius-small: 3px;
+$border-radius-large: 6px;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+@mixin clearAfter() {
+	content:"";
+    display:table;
+    clear:both;
+}
+
+// --------------------------------------------------
+// Admin Styles
+// --------------------------------------------------
+
+input {
+	width: 300px;
+	margin-bottom: 30px;
+}
+button {
+	width: 300px;
+	margin: 30px 0px 0px 0;
+}
