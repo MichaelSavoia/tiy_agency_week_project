@@ -128,8 +128,36 @@
 	            </div>
 	        </div>
 	    </div>
+	    <div class="row">
+			<div class="col-xs-12">
+				<div class="copyright">
+					<p class="copyright-text">&copy; 2016 Queen City Marina</p>
+					<p id="loginStatus" class="copyright-text">Admin: <a id="loginLink" href="#" data-toggle="modal" data-target="#login-modal">Login</a></p>
+				</div>
+			</div>
+	    </div>
     </footer>
 	<!-- /footer -->
+
+
+
+	<!--
+		Login Modal Popup
+	-->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<h1>Welcome Back!</h1>
+				<h3>Please Login Below</h3>
+				<form id="loginForm">
+					<input type="text" id="loginUsername" name="username" placeholder="Username" autofocus="auto">
+					<input type="password" id="loginPassword" name="password" placeholder="Password">
+					<input type="submit" id="loginSubmit" name="submit" class="login loginmodal-submit" value="Login">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- /.modal.fade -->
 
 
 
