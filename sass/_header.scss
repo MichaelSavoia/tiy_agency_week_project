@@ -1,19 +1,30 @@
 header {
 	width: 100%;
+	background-color: $color-purple;
+	color: $color-background;
 	padding: 10px 0;
 	
 
+	a {
+		color: $color-background;
+		font-weight: bold;
+
+		&:hover {
+			color: $color-link;
+		}
+	}
+
 	.logo {
-		width: 60px;
-		height: 60px;
+		width: 35px;
 		display: inline-block;
+		padding-top: 10px;
 	}
 
 	.logo-text {
 		display: inline-block;
 		vertical-align: top;
 		padding-left: 10px;
-		padding: 15px 0 0 10px;
+		padding: 12px 0 0 10px;
 		margin: 0;
 	}
 

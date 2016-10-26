@@ -14,6 +14,7 @@
 			}
 
 			#menuContent {
+				background-color: $color-link;
 				display: none;
 				padding: 0;
 				position: absolute;
@@ -25,13 +26,25 @@
 
 				li {
 					min-width: 180px;
-					padding: 20px;
+
+					a {
+						padding: 20px 90px 20px 0;
+
+						&:hover {
+							color: $color-background;
+						}
+					}
+
+					&:hover {
+						background-color: $color-bluegray;
+					}
 				}
 			}
 
 			&:hover {
 
 				#menuIcon {
+					background-color: $color-link;
 				}
 
 				#menuContent {
