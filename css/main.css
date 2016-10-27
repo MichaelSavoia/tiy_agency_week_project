@@ -33,6 +33,10 @@ header {
   background-color: #2e2a43;
   color: #f4f4f4;
   padding: 10px 0; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
   header a {
     color: #f4f4f4;
     font-weight: bold; }
@@ -52,23 +56,43 @@ header {
     text-decoration: none; }
     header .logo-link:hover {
       text-decoration: none; }
-  header nav {
-    display: inline-block;
+  header .right-menu {
     float: right; }
-    header nav #menuIcon {
-      display: none;
-      font-size: 1.4em;
-      padding: 19px; }
-    header nav ul {
-      list-style: none;
-      margin: 0; }
-      header nav ul li {
-        padding: 20px;
-        display: inline-block; }
-        header nav ul li a {
-          text-decoration: none; }
-          header nav ul li a:hover, header nav ul li a:active {
+    header .right-menu nav {
+      float: left; }
+      header .right-menu nav #menuIcon {
+        display: none;
+        font-size: 1.4em;
+        padding: 19px; }
+      header .right-menu nav ul {
+        list-style: none;
+        margin: 0; }
+        header .right-menu nav ul li {
+          padding: 20px;
+          display: inline-block; }
+          header .right-menu nav ul li a {
             text-decoration: none; }
+            header .right-menu nav ul li a:hover, header .right-menu nav ul li a:active {
+              text-decoration: none; }
+    header .right-menu .weather {
+      border-left: 1px solid #393453;
+      padding-left: 15px;
+      margin-top: 9px;
+      float: right; }
+      header .right-menu .weather .icon {
+        margin-top: 5px;
+        float: left; }
+      header .right-menu .weather .weather-data {
+        margin-left: 10px;
+        float: right; }
+        header .right-menu .weather .weather-data p {
+          margin: 0;
+          padding: 0; }
+          header .right-menu .weather .weather-data p.day {
+            margin-bottom: -5px; }
+          header .right-menu .weather .weather-data p.temperature {
+            font-size: 1.2em;
+            font-weight: bold; }
 
 footer {
   right: 0;
@@ -130,30 +154,36 @@ footer {
       margin-bottom: 10px; }
 
 @media screen and (max-width: 990px) {
-  header nav {
+  header .right-menu nav {
     position: relative;
+    float: right;
     z-index: 100; }
-    header nav #menuIcon {
+    header .right-menu nav #menuIcon {
       display: inline-block; }
-    header nav #menuContent {
+    header .right-menu nav #menuContent {
       background-color: #B44031;
       display: none;
       padding: 0;
       position: absolute;
       top: 65px;
       right: 0; }
-    header nav ul li {
+    header .right-menu nav ul li {
       min-width: 180px; }
-      header nav ul li a {
+      header .right-menu nav ul li a {
         padding: 20px 90px 20px 0; }
-        header nav ul li a:hover {
+        header .right-menu nav ul li a:hover {
           color: #f4f4f4; }
-      header nav ul li:hover {
+      header .right-menu nav ul li:hover {
         background-color: #687c83; }
-    header nav:hover #menuIcon {
+    header .right-menu nav:hover #menuIcon {
       background-color: #B44031; }
-    header nav:hover #menuContent {
+    header .right-menu nav:hover #menuContent {
       display: block; }
+  header .right-menu .weather {
+    border-left: none;
+    border-right: 1px solid #393453;
+    padding-left: 0;
+    padding-right: 15px; }
   .boat {
     padding: 10px; }
     .boat .boat-image {
@@ -179,3 +209,9 @@ footer {
     .boat .boat-details {
       width: 100%;
       float: none; } }
+
+@media screen and (max-width: 477px) {
+  header .right-menu .weather {
+    padding-right: 10px; }
+    header .right-menu .weather .icon {
+      display: none; } }

@@ -5,51 +5,62 @@
 	// --------------------------------------------------
 	header {
 
-		nav {
-			position: relative;
-			z-index: 100;
+		.right-menu {
 
-			#menuIcon {
-				display: inline-block;
-			}
-
-			#menuContent {
-				background-color: $color-link;
-				display: none;
-				padding: 0;
-				position: absolute;
-				top: 65px;
-				right: 0;
-			}
-
-			ul {
-
-				li {
-					min-width: 180px;
-
-					a {
-						padding: 20px 90px 20px 0;
-
-						&:hover {
-							color: $color-background;
-						}
-					}
-
-					&:hover {
-						background-color: $color-bluegray;
-					}
-				}
-			}
-
-			&:hover {
+			nav {
+				position: relative;
+				float: right;
+				z-index: 100;
 
 				#menuIcon {
-					background-color: $color-link;
+					display: inline-block;
 				}
 
 				#menuContent {
-					display:block;
+					background-color: $color-link;
+					display: none;
+					padding: 0;
+					position: absolute;
+					top: 65px;
+					right: 0;
 				}
+
+				ul {
+
+					li {
+						min-width: 180px;
+
+						a {
+							padding: 20px 90px 20px 0;
+
+							&:hover {
+								color: $color-background;
+							}
+						}
+
+						&:hover {
+							background-color: $color-bluegray;
+						}
+					}
+				}
+
+				&:hover {
+
+					#menuIcon {
+						background-color: $color-link;
+					}
+
+					#menuContent {
+						display:block;
+					}
+				}
+			}
+
+			.weather {
+				border-left: none;
+				border-right: 1px solid lighten($color-purple, 5);
+				padding-left: 0;
+				padding-right: 15px;
 			}
 		}
 	}
@@ -104,6 +115,24 @@
 		.boat-details {
 			width: 100%;
 			float: none;
+		}
+	}
+
+}
+
+@media screen and (max-width: 477px) {
+
+	header {
+
+		.right-menu {
+
+			.weather {
+				padding-right: 10px;
+
+				.icon {
+					display: none;
+				}
+			}
 		}
 	}
 
