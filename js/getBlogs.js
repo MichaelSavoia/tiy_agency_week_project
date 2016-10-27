@@ -2,11 +2,16 @@
 
 $(document).ready(function () {
 
+	alert(localStorage.getItem('token'));
+
 	$.ajax({
 		url: 'https://tiyagencyweek.herokuapp.com/blogs',
+		headers: {"X_CSRF_TOKEN": localStorage.getItem('token')},
 		success: (blogPosts) => {
 			console.log(blogPosts)
-		}
+		},
+		error: function(err) { console.log("Error! Message: " + e.responseText); },
+  		complete: function() { console.log("All done!"); }
 	})
 
 	let $article = $(`article`)
