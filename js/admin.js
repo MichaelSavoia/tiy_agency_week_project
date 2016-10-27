@@ -63,9 +63,16 @@ $(document).ready(function() {
 
 		function checkUserLoginStatus()
 		{
+			// Is the user logged in?
 			if(!localStorage.getItem('token'))
 			{
+				// No, redirect to hom page
 				window.location.href="index.html";
+			}
+			else
+			{
+				// Yes, remove page overlay
+				$('#adminOverlay').remove();
 			}
 		}
 
@@ -78,8 +85,10 @@ $(document).ready(function() {
 
 
 
+	// Check if user is logged in
 	CreateBlog.checkUserLogin();
 
+	// Create Blog form listener
 	$('#formBlog').on('submit', CreateBlog.init);
 
 });
