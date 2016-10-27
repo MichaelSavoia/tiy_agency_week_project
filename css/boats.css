@@ -14,14 +14,18 @@
     width: 64%;
     float: left; }
     .boat .boat-details .title {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      margin: 0 0 0; }
+    .boat .boat-details .name {
       font-weight: 300;
       text-transform: uppercase;
-      margin: 0 0 -4px; }
-    .boat .boat-details .name {
-      font-weight: bold;
-      font-size: 2em;
       margin: 0 0 10px; }
     .boat .boat-details .price {
       font-size: 1.6em;
       font-style: italic;
       margin: 0 0 10px; }
+    .boat .boat-details .description {
+      font-size: 16px;
+      padding-top: 5px; }

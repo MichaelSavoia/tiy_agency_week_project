@@ -76,12 +76,17 @@ footer {
   left: 0;
   text-align: center;
   background-color: #2e2a43;
-  color: white; }
+  color: #f4f4f4; }
   footer .socialIcons {
     font-size: 2em;
     color: white; }
     footer .socialIcons .fa {
       padding: 0 5px 0 5px; }
+    footer .socialIcons a {
+      color: #f4f4f4;
+      font-weight: bold; }
+      footer .socialIcons a:hover {
+        color: #B44031; }
   footer .copyright {
     text-align: center;
     margin: 20px auto 0; }
