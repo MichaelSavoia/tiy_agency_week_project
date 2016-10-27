@@ -1,33 +1,25 @@
 .blogPost {
   padding: 20px;
   background-color: #efefef;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: block; }
   .blogPost:after {
     content: "";
     display: table;
     clear: both; }
-  .blogPost .aboutImg, .blogPost .historyImg {
-    padding-right: 20px;
-    float: left;
-    width: 34%; }
-  .blogPost .historyImg {
-    float: right; }
-  .blogPost .blogContent {
-    width: 90%;
-    float: left; }
-    .blogPost .blogContent .blogTitle {
-      font-weight: 300;
-      text-transform: uppercase;
-      margin: 0 0 -4px; }
-    .blogPost .blogContent article {
-      line-height: 1.6em;
-      font-size: 16px; }
-    .blogPost .blogContent p {
-      color: #B44031; }
-    .blogPost .blogContent .authorName {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin: 0 0 10px; }
+  .blogPost .blogTitle {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 -4px; }
+  .blogPost article {
+    line-height: 1.6em;
+    font-size: 16px;
+    overflow: hidden; }
+  .blogPost .authorName {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0 0 10px;
+    color: #B44031; }
 
 @media screen and (max-width: 990px) {
   .blogPost {
