@@ -108,12 +108,49 @@ $(document).ready(function () {
 		};
 	}();
 
+	var Weather = function () {
+
+		function init() {
+			$.simpleWeather({
+				location: 'Austin, TX',
+				woeid: '',
+				unit: 'f',
+				success: function success(resp) {
+					displayWeather(resp);
+				},
+				error: function error(_error) {
+					console.log('error returned from simpleWeather API: ' + _error);
+				}
+			});
+		}
+
+		function displayWeather(weather) {
+
+			var $weather = $('#weather');
+
+			var temperature = weather.temp,
+			    day = weather.forecast[0].day,
+			    icon = weather.thumbnail;
+
+			var weatherElement = '<img id="weatherIcon" class="icon" src="' + icon + '">\n\t\t\t\t <div class="weather-data">\n\t\t\t\t\t<p id="weatherDay" class="day">' + day + '</p>\n\t\t\t\t\t<p id="weatherTemperature" class="temperature">' + temperature + '&deg;</p>\n\t\t\t\t </div>';
+
+			$weather.html(weatherElement);
+		}
+
+		return {
+			init: init
+		};
+	}();
+
+	// Set login status
+	Login.setLoginStatus();
+
+	// Get weather data
+	Weather.init();
+
 	// Login form submit handler
 	$('#loginForm').on('submit', Login.init);
 
 	// Logout handler
 	$('body').on('click', '#logoutLink', Login.logout);
-
-	// Set login status
-	Login.setLoginStatus();
 });
