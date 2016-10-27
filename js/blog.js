@@ -29,25 +29,18 @@ $(document).ready(function() {
 				}
 			});
 		}
-
-		// --------------------------------------------------
-		// Shortern Blog Posting 
-		// --------------------------------------------------
-		function shorterPost(data) 
-		{
-			if (data.length > 400) {
-				return data.substring(0, 400)
-				}
-		}
 		
 		// --------------------------------------------------
 		// Expand Blog Post 
 		// --------------------------------------------------
-		function readMore() 
-		{
-			alert("testing")
-		}
+		function expandPost () {
+			$('article').readmore( {
+				speed: 60,
+				collaspedHeight: 200,
+				embedCSS: true
+			})
 
+		}
 
 		// --------------------------------------------------
 		// Build HTML Element for blog listings
@@ -60,32 +53,27 @@ $(document).ready(function() {
 
 			blogs.forEach(function (blog) {
 				let blogPostTime = moment(blog.posted).format('MMMM DD, YYYY')
-				let blogContent = shorterPost(blog.description)
 
 				blogElement +=
 				`
-				<div class="row" id="blogPost">
-					<div class="col-xs-12 contentRow">
-						<div class="blogPost">
-							<div class="blogContent">
-								<h2 class="blogTitle">${blog.title}</h2>
-								<p class="authorName">By Jake Boyles - Posted on ${blogPostTime}</p>
-								<article>${blogContent}</article>
-								<button class="readMore">Read More</p>
-							</div>
-						</div>	
-					<div>	
+				<div class="row">
+					<div class="col-xs-12 blogPost">	
+						<article>
+						<h2 class="blogTitle">${blog.title}</h2>
+						<p class="authorName">By Jake Boyles - Posted on ${blogPostTime}</p>
+						<p>${blog.description}</p>
+						</article>
+					</div>
 				</div
 				`
-							$('.readMore').on('click', viewBlog.readMore);
-
 			});
 
 			$blogContainer.html(blogElement)
+			expandPost();
 		}
 
 		return {
-			init: init,
+			init: init
 		}
 
 	})();

@@ -29,19 +29,14 @@ $(document).ready(function () {
 		}
 
 		// --------------------------------------------------
-		// Shortern Blog Posting 
-		// --------------------------------------------------
-		function shorterPost(data) {
-			if (data.length > 400) {
-				return data.substring(0, 400);
-			}
-		}
-
-		// --------------------------------------------------
 		// Expand Blog Post 
 		// --------------------------------------------------
-		function readMore() {
-			alert("testing");
+		function expandPost() {
+			$('article').readmore({
+				speed: 60,
+				collaspedHeight: 200,
+				embedCSS: true
+			});
 		}
 
 		// --------------------------------------------------
@@ -54,13 +49,12 @@ $(document).ready(function () {
 
 			blogs.forEach(function (blog) {
 				var blogPostTime = moment(blog.posted).format('MMMM DD, YYYY');
-				var blogContent = shorterPost(blog.description);
 
-				blogElement += "\n\t\t\t\t<div class=\"row\" id=\"blogPost\">\n\t\t\t\t\t<div class=\"col-xs-12 contentRow\">\n\t\t\t\t\t\t<div class=\"blogPost\">\n\t\t\t\t\t\t\t<div class=\"blogContent\">\n\t\t\t\t\t\t\t\t<h2 class=\"blogTitle\">" + blog.title + "</h2>\n\t\t\t\t\t\t\t\t<p class=\"authorName\">By Jake Boyles - Posted on " + blogPostTime + "</p>\n\t\t\t\t\t\t\t\t<article>" + blogContent + "</article>\n\t\t\t\t\t\t\t\t<button class=\"readMore\">Read More</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\n\t\t\t\t\t<div>\t\n\t\t\t\t</div\n\t\t\t\t";
-				$('.readMore').on('click', viewBlog.readMore);
+				blogElement += "\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-xs-12 blogPost\">\t\n\t\t\t\t\t\t<article>\n\t\t\t\t\t\t<h2 class=\"blogTitle\">" + blog.title + "</h2>\n\t\t\t\t\t\t<p class=\"authorName\">By Jake Boyles - Posted on " + blogPostTime + "</p>\n\t\t\t\t\t\t<p>" + blog.description + "</p>\n\t\t\t\t\t\t</article>\n\t\t\t\t\t</div>\n\t\t\t\t</div\n\t\t\t\t";
 			});
 
 			$blogContainer.html(blogElement);
+			expandPost();
 		}
 
 		return {
