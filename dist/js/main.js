@@ -74,7 +74,7 @@ $(document).ready(function () {
 		function checkLoginStatus() {
 			// Login / Logout links
 			var loginStateElement = 'Admin: <a id="loginLink" href="#" data-toggle="modal" data-target="#login-modal">Login</a>';
-			var logoutStateElement = 'Admin: <a id="logoutLink" href="#">Logout</a>';
+			var logoutStateElement = 'Admin: <a id="logoutLink" href="#">Logout</a>, <a href="admin.html">Create New Blog</a>';
 
 			var $copyright = $('#loginStatus');
 
