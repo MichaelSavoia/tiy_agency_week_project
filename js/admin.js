@@ -61,13 +61,24 @@ $(document).ready(function() {
 			});
 		}
 
+		function checkUserLoginStatus()
+		{
+			if(!localStorage.getItem('token'))
+			{
+				window.location.href="index.html";
+			}
+		}
+
 		return {
 			init: init,
+			checkUserLogin: checkUserLoginStatus,
 		}
 
 	})();
 
 
+
+	CreateBlog.checkUserLogin();
 
 	$('#formBlog').on('submit', CreateBlog.init);
 
