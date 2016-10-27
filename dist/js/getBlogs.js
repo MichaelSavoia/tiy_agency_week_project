@@ -6,13 +6,17 @@ $(document).ready(function () {
 
 	$.ajax({
 		url: 'https://tiyagencyweek.herokuapp.com/blogs',
-		headers: { "X_CSRF_TOKEN": localStorage.getItem('token') },
+		headers: { "X_CSRF_TOKEN": "M44ASR0FL0PJH3OLJ5RC" },
 		success: function success(blogPosts) {
 			console.log(blogPosts);
 			var $blogContainer = $('#blogContainer');
 			blogPosts.blogs.forEach(function (blogPost) {
-				var blogPostTime = blogPost.posted;
-				$blogContainer.append('\n\t\t\t\t\t<div class="row" id="blogPost">\n\t\t\t\t\t\t<div class="col-xs-12 contentRow">\n\t\t\t\t\t\t\t<div class="blogPost">\n\t\t\t\t\t\t\t\t<div class="blogContent">\n\t\t\t\t\t\t\t\t\t<h2 class="blogTitle">' + blogPost.title + '</h2>\n\t\t\t\t\t\t\t\t\t<p class="authorName">By Jake Boyles - Posted on ' + blogPostTime + '</p>\n\t\t\t\t\t\t\t\t\t<article>' + blogPost.description + '</article>\n\t\t\t\t\t\t\t\t\t<p class="readMore">Read More</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div>\t\n\t\t\t\t\t</div\n\t\t\t\t\t');
+				var blogContent = blogPost.description;
+				if (blogContent.length > 400) {
+					var _shortBlogContent = blogContent.substring(0, 400);
+				}
+				var blogPostTime = moment(blogPost.posted).format('MMMM DD, YYYY');
+				$blogContainer.append('\n\t\t\t\t\t<div class="row" id="blogPost">\n\t\t\t\t\t\t<div class="col-xs-12 contentRow">\n\t\t\t\t\t\t\t<div class="blogPost">\n\t\t\t\t\t\t\t\t<div class="blogContent">\n\t\t\t\t\t\t\t\t\t<h2 class="blogTitle">' + blogPost.title + '</h2>\n\t\t\t\t\t\t\t\t\t<p class="authorName">By Jake Boyles - Posted on ' + blogPostTime + '</p>\n\t\t\t\t\t\t\t\t\t<article>' + shortBlogContent + '</article>\n\t\t\t\t\t\t\t\t\t<p class="readMore">Read More</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div>\t\n\t\t\t\t\t</div\n\t\t\t\t\t');
 			});
 		},
 		error: function error(err) {

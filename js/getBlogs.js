@@ -6,12 +6,16 @@ $(document).ready(function () {
 
 	$.ajax({
 		url: 'https://tiyagencyweek.herokuapp.com/blogs',
-		headers: {"X_CSRF_TOKEN": localStorage.getItem('token')},
+		headers: {"X_CSRF_TOKEN": "M44ASR0FL0PJH3OLJ5RC"},
 		success: (blogPosts) => {
 			console.log(blogPosts)
 			let $blogContainer = $('#blogContainer')
 			blogPosts.blogs.forEach(function (blogPost) {
-				let blogPostTime = blogPost.posted
+				let blogContent = blogPost.description
+				if (blogContent.length > 400 ) {
+					let shortBlogContent = blogContent.substring(0, 400)
+				}
+				let blogPostTime = moment(blogPost.posted).format('MMMM DD, YYYY')
 				$blogContainer.append(`
 					<div class="row" id="blogPost">
 						<div class="col-xs-12 contentRow">
@@ -19,7 +23,7 @@ $(document).ready(function () {
 								<div class="blogContent">
 									<h2 class="blogTitle">${blogPost.title}</h2>
 									<p class="authorName">By Jake Boyles - Posted on ${blogPostTime}</p>
-									<article>${blogPost.description}</article>
+									<article>${shortBlogContent}</article>
 									<p class="readMore">Read More</p>
 								</div>
 							<div>	
