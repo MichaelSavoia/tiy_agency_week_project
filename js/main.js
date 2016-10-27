@@ -142,7 +142,7 @@ $(document).ready(function() {
 		function init()
 		{
 			$.simpleWeather({
-				location: 'Austin, TX',
+				location: 'Cincinnati, OH',
 				woeid: '',
 				unit: 'f',
 				success: (resp) => {
