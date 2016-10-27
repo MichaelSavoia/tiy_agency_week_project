@@ -46,6 +46,10 @@ $border-radius-large: 6px;
 // --------------------------------------------------
 .location {
 	margin-bottom: 40px;
+
+	a{
+		color: $color-link;
+	}
 }
 
 
