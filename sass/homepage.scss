@@ -74,7 +74,7 @@ body{
 				font-size: 3rem;
 				padding: 0 10px;
 
-				color: $color-bluegray;
+				color: $color-link;
 			}
 		}
 
@@ -96,9 +96,28 @@ body{
 
 		.twitterHere{
 			height: auto;
-			background-color: #0084b4;
+			background-color: $color-purple;
 			padding: 6px;
 			border-radius: 10px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.container{
+		.row{
+			.callToAction{
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
+		}
+
+		.social{
+			.twitterHere{
+				margin: 0 10px;
+				margin-bottom: 60px;
+			}
 		}
 	}
 }
