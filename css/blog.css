@@ -15,7 +15,8 @@
   .blogPost article {
     line-height: 1.6em;
     font-size: 16px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: all 0.8s; }
   .blogPost .authorName {
     font-weight: bold;
     font-size: 1.4em;
@@ -28,7 +29,7 @@
   position: absolute;
   bottom: 10px;
   padding: 30px 20px 10px;
-  background-image: linear-gradient(to bottom, transparent, #efefef 30%); }
+  background-image: linear-gradient(to bottom, transparent, #ececec 30%); }
 
 a.readMore {
   color: #B44031;
