@@ -30,6 +30,7 @@ $border-radius-large: 6px;
 	background-color: darken($color-background, 2);
 	margin-bottom: 40px;
 	display: block;
+	position: relative;
 
 	&:after {
 		@include clearAfter();
@@ -52,6 +53,20 @@ $border-radius-large: 6px;
 		margin: 0 0 10px;
 		color: $color-link;
 	}
+}
+
+.expand-container {
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    bottom: 10px;
+    padding: 30px 20px 10px;
+    background-image: 
+    	linear-gradient(
+    		to bottom, 
+    		transparent, 
+    		darken($color-background, 2) 30%
+		);
 }
 
 a.readMore {
