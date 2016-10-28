@@ -38,22 +38,11 @@ body {
 .container .row .callToAction3 {
   background-color: #687c83; }
 
-.container .social .socialIcons {
-  margin-bottom: 10px; }
-  .container .social .socialIcons i {
-    font-size: 3rem;
-    padding: 0 10px;
+.container .social .about {
+  padding-right: 60px;
+  margin-bottom: 60px; }
+  .container .social .about h2 {
     color: #B44031; }
-
-.container .social .blog {
-  margin: 50px 0;
-  height: auto; }
-  .container .social .blog:nth-child(1) {
-    margin-top: 0; }
-  .container .social .blog h2 {
-    color: #767676; }
-  .container .social .blog h4 {
-    color: #333; }
 
 .container .social .twitterHere {
   height: auto;
@@ -62,6 +51,24 @@ body {
   border-radius: 10px;
   margin-bottom: 60px; }
 
+.container .row .allBlog {
+  margin-bottom: 60px; }
+  .container .row .allBlog .blog {
+    background-color: #ececec;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 5px; }
+  .container .row .allBlog article {
+    overflow: hidden; }
+  .container .row .allBlog a.readMore {
+    color: #B44031; }
+  .container .row .allBlog h2 {
+    color: #B44031; }
+  .container .row .allBlog .about {
+    color: #B44031; }
+  .container .row .allBlog h3 {
+    font-weight: 400; }
+
 @media (max-width: 768px) {
   .container .row .callToAction {
     margin-top: 20px;
@@ -69,3 +76,7 @@ body {
   .container .social .twitterHere {
     margin: 0 10px;
     margin-bottom: 60px; } }
+
+@media (max-width: 990px) {
+  .container .social .about {
+    margin-right: 0; } }
