@@ -21,6 +21,10 @@
     margin: 0 0 10px;
     color: #B44031; }
 
+a.readMore {
+  color: #B44031;
+  font-weight: 800; }
+
 @media screen and (max-width: 990px) {
   .blogPost {
     padding: 10px; }

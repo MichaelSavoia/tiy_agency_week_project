@@ -35,7 +35,9 @@ $(document).ready(function () {
 			$('article').readmore({
 				speed: 60,
 				collaspedHeight: 200,
-				embedCSS: true
+				embedCSS: true,
+				moreLink: '<a class="readMore" href="#">Read more</a>',
+				lessLink: '<a class="readMore" href="#">Close</a>'
 			});
 		}
 
