@@ -52,7 +52,7 @@ $(document).ready(function () {
 			blogs.forEach(function (blog) {
 				var blogPostTime = moment(blog.posted).format('MMMM DD, YYYY');
 
-				blogElement += "\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-xs-12 blogPost\">\t\n\t\t\t\t\t\t<article>\n\t\t\t\t\t\t<h2 class=\"blogTitle\">" + blog.title + "</h2>\n\t\t\t\t\t\t<p class=\"authorName\">By Jake Boyles - Posted on " + blogPostTime + "</p>\n\t\t\t\t\t\t<p>" + blog.description + "</p>\n\t\t\t\t\t\t</article>\n\t\t\t\t\t</div>\n\t\t\t\t</div\n\t\t\t\t";
+				blogElement += "\n\t\t\t\t\t<div class=\"col-xs-12 blogPost\">\t\n\t\t\t\t\t\t<article>\n\t\t\t\t\t\t<h2 class=\"blogTitle\">" + blog.title + "</h2>\n\t\t\t\t\t\t<p class=\"authorName\">By Jake Boyles - Posted on " + blogPostTime + "</p>\n\t\t\t\t\t\t<p>" + blog.description + "</p>\n\t\t\t\t\t\t</article>\n\t\t\t\t\t</div>\n\t\t\t\t";
 			});
 
 			$blogContainer.html(blogElement);

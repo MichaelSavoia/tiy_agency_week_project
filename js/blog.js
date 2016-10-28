@@ -58,7 +58,6 @@ $(document).ready(function() {
 
 				blogElement +=
 				`
-				<div class="row">
 					<div class="col-xs-12 blogPost">	
 						<article>
 						<h2 class="blogTitle">${blog.title}</h2>
@@ -66,7 +65,6 @@ $(document).ready(function() {
 						<p>${blog.description}</p>
 						</article>
 					</div>
-				</div
 				`
 			});
 
