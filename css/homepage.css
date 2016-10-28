@@ -72,11 +72,10 @@ body {
 @media (max-width: 768px) {
   .container .row .callToAction {
     margin-top: 20px;
-    margin-bottom: 30px; }
-  .container .social .twitterHere {
-    margin: 0 10px;
-    margin-bottom: 60px; } }
+    margin-bottom: 30px; } }
 
 @media (max-width: 990px) {
   .container .social .about {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .container .social .twitterHere {
+    display: none; } }

@@ -144,13 +144,6 @@ body{
 				margin-bottom: 30px;
 			}
 		}
-
-		.social{
-			.twitterHere{
-				margin: 0 10px;
-				margin-bottom: 60px;
-			}
-		}
 	}
 }
 
@@ -159,6 +152,10 @@ body{
 		.social{
 			.about{
 				margin-right: 0;
+			}
+
+			.twitterHere{
+				display: none;
 			}
 		}
 	}
