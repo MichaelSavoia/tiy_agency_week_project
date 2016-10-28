@@ -47,7 +47,10 @@
 				&:hover {
 
 					#menuIcon {
-						background-color: $color-link;
+						
+						&.active {
+							background-color: $color-link;
+						}
 					}
 
 					#menuContent {

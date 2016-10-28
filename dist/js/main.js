@@ -148,6 +148,15 @@ $(document).ready(function () {
 	// Get weather data
 	Weather.init();
 
+	// Change default toggle state
+	$('#menuIcon').toggleClass('active');
+
+	// Toggle menu content view state and icon active state on click
+	$('#menuIcon').on('click', function () {
+		$('#menuContent').toggle();
+		$('#menuIcon').toggleClass('active');
+	});
+
 	// Login form submit handler
 	$('#loginForm').on('submit', Login.init);
 

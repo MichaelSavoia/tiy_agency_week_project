@@ -178,7 +178,7 @@ footer {
           color: #f4f4f4; }
       header .right-menu nav ul li:hover {
         background-color: #687c83; }
-    header .right-menu nav:hover #menuIcon {
+    header .right-menu nav:hover #menuIcon.active {
       background-color: #B44031; }
     header .right-menu nav:hover #menuContent {
       display: block; }
