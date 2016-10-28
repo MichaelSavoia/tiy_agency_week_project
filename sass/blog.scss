@@ -65,7 +65,7 @@ $border-radius-large: 6px;
     background-image: 
     	linear-gradient(
     		to bottom, 
-    		transparent, 
+    		rgba($color-background, 0), 
     		darken($color-background, 3) 30%
 		);
 }
