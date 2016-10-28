@@ -36,7 +36,7 @@ $(document).ready(function () {
 				speed: 60,
 				collaspedHeight: 200,
 				embedCSS: true,
-				moreLink: '<a class="readMore" href="#">Read more</a>',
+				moreLink: '<div class="expand-container"><a class="readMore" href="#">Read more</a></div>',
 				lessLink: '<a class="readMore" href="#">Close</a>'
 			});
 		}
