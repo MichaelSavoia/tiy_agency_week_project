@@ -57,9 +57,11 @@ body {
     background-color: #ececec;
     margin-bottom: 20px;
     padding: 20px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    position: relative; }
   .container .row .allBlog article {
-    overflow: hidden; }
+    overflow: hidden;
+    transition: all 0.8s; }
   .container .row .allBlog a.readMore {
     color: #B44031; }
   .container .row .allBlog h2 {
@@ -68,6 +70,14 @@ body {
     color: #B44031; }
   .container .row .allBlog h3 {
     font-weight: 400; }
+
+.expand-container {
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  bottom: 10px;
+  padding: 30px 20px 10px;
+  background-image: linear-gradient(to bottom, transparent, #ececec 30%); }
 
 @media (max-width: 768px) {
   .container .row .callToAction {
