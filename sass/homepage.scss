@@ -46,6 +46,7 @@ body{
 			position: relative;
 
 			a{
+				text-decoration: none;
 
 				h2{
 					position: absolute;
@@ -170,6 +171,7 @@ body{
 				margin-right: auto;
 
 				a{
+					// text-decoration: none;
 					h2{
 						position: relative;
 						top: 26px;
@@ -189,6 +191,20 @@ body{
 
 			.twitterHere{
 				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 367px){
+	.container{
+		.row{
+			.callToAction1{
+				a{
+					h2{
+						top: 5px;
+					}
+				}
 			}
 		}
 	}

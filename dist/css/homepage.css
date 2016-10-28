@@ -20,14 +20,16 @@ body {
   width: 200px;
   border-radius: 50%;
   position: relative; }
-  .container .row .callToAction a h2 {
-    position: absolute;
-    top: 40px;
-    color: white;
-    text-align: center;
-    padding: 0 10px;
-    font-weight: 700;
-    font-size: 2.8rem; }
+  .container .row .callToAction a {
+    text-decoration: none; }
+    .container .row .callToAction a h2 {
+      position: absolute;
+      top: 40px;
+      color: white;
+      text-align: center;
+      padding: 0 10px;
+      font-weight: 700;
+      font-size: 2.8rem; }
 
 .container .row .callToAction1 {
   background-color: #2e2a43; }
@@ -100,5 +102,9 @@ body {
     padding-right: 15px; }
   .container .social .twitterHere {
     display: none; } }
+
+@media (max-width: 367px) {
+  .container .row .callToAction1 a h2 {
+    top: 5px; } }
 
 /*# sourceMappingURL=homepage.css.map */
