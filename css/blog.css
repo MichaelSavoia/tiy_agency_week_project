@@ -15,7 +15,8 @@
   .blogPost article {
     line-height: 1.6em;
     font-size: 16px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: all 0.8s; }
   .blogPost .authorName {
     font-weight: bold;
     font-size: 1.4em;
